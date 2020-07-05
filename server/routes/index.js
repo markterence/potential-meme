@@ -1,9 +1,19 @@
-var express = require('express');
-var router = express.Router();
+const routes = [
+  {'tenant': '/tenant'},
+  'users',
+];
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
-module.exports = router;
+module.exports = (app) => {
+  for (const route of routes) {
+    if(typeof(route) == 'object') {
+      const routeFile = Object.keys(route)[0]
+      app.use(route[routeFile], require(`./${routeFile}`))
+    }
+    else if(typeof(route) == 'string') {
+      app.use(`/${route}`, require(`./${route}`))
+    }
+    else {
+      throw new Error('Invalid route definition')
+    }
+  }
+}
