@@ -5,12 +5,12 @@
     "version": "0.0.0",
     "author": "Mark Terence Tiglao",
     "license": "MIT",
-    "workspaces": ["frontend", "server"],
     "scripts": {
       "start:front": "cd frontend && yarn start",
       "build:front": "cd frontend && yarn build",
       "start:back": "cd server && yarn start",
       "build": "yarn build:front",
-      "start": "yarn start:front && yarn start:back"
+      "start": "yarn start:front && yarn start:back",
+      "front": "yarn workspace multi-tenant-frontend"
     }
   }
