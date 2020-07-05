@@ -1,0 +1,15 @@
+{
+    "name": "multi-tenant-frontend",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+    },
+    "dependencies": {
+      "axios": "^0.19.2",
+      "vue": "^2.6.11"
+    },
+    "devDependencies": {
+      "parcel-bundler": "^1.12.4"
+    }
+  }
+  
