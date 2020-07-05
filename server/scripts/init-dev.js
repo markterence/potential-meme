@@ -1,4 +1,10 @@
 const db = require('../utils/lowdb')
+const dbConfig = require('../config/db');
+const fs = require('fs');
+
+if(!fs.existsSync(dbConfig.lowdb.path)) {
+    fs.mkdirSync(dbConfig.lowdb.path)
+}
 
 db.defaults({
     workspaces: [],
