@@ -1,15 +1,18 @@
 {
-    "name": "multi-tenant-frontend",
-    "version": "0.0.0",
-    "private": true,
-    "scripts": {
-    },
-    "dependencies": {
-      "axios": "^0.19.2",
-      "vue": "^2.6.11"
-    },
-    "devDependencies": {
-      "parcel-bundler": "^1.12.4"
-    }
+  "name": "multi-tenant-frontend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.1.2",
+    "parcel-bundler": "^1.12.4",
+    "vue-template-compiler": "^2.6.11"
   }
-  
+}
