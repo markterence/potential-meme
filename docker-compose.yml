@@ -1,0 +1,11 @@
+version: '3'
+
+services: 
+  tenant_fe:
+    container_name: tenant_fe
+    image: nginx:alpine
+    ports: 
+      - "3001:80"
+    volumes: 
+      - frontend/dist:/app
+      - docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
