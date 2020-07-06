@@ -21,4 +21,9 @@ db.get('workspaces')
     id: 1,
     workspace_id: 'team1',
     name: 'The ABC'
+},
+{
+    id: 2,
+    workspace_id: 'team2',
+    name: 'We Are Two'
 }).write()

@@ -54,9 +54,12 @@ yarn install
 yarn start
 ```
 
-- On the `server` directory in another terminal tab
+- On the `server` directory in another terminal tab.
 
-```
+```bash
+# Initialize and seed development JSON db
+node scripts/init-dev.js
+# Start the server
 yarn start
 ```
 
