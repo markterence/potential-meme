@@ -6,7 +6,7 @@
     "start": "parcel index.html --no-autoinstall"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "src": "^1.1.2",
     "vue": "^2.6.11",
     "vue-hot-reload-api": "^2.3.4"
